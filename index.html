@@ -16,12 +16,15 @@
             <source src="audio.mp3" type="audio/mpeg" >
         </audio>
             <div class="slider_container">
-            <button id="pauseBtn" onclick="playPause()">&#9658;</button>
+            <button class="musicBtn" id="pauseBtn" onclick="playPause()">&#9658;</button>
             
              <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-             <button onclick="stop()">&#9611;</button>
+             <button class="musicBtn" onclick="stop()">&#9611;</button>
         </div>
+        <div class="slider_container">
 
+            <button id="lyricsBtn">Download</button>
+        </div>
         <div class="slider_container">
             <i class="fa fa-volume-down"></i>
              <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
@@ -29,8 +32,18 @@
         </div>
 
     </div>
-    &nbsp;
-    &nbsp;
+    <div>
+        <div class="lyricsTitle">
+            <div>
+                <h1>song title</h1>
+                <p id="genre">genre</p>
+            </div>
+        </div>
+        
+        <div id="lyrics">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</br> Possimus quam dolor laborum aspernatur obcaecati provident </br> soluta repudiandae vero, inventore totam maxime.</br> Beatae minus odio laborum facilis? Recusandae voluptatem reprehenderit</br> perspiciatis ut iste reiciendis corrupti! Asperiores ducimus </br>quas magni eveniet maiores. Fugit reprehenderit consectetur ex rerum facere ratione velit.</br> Corrupti, deserunt sequi. Hic consectetur omnis maiores et </br>aperiam alias optio, fuga quae! Sint iure sit nesciunt ab animi provident repudiandae</br> optio dolorum laborum impedit natus, voluptates praesentium</br> aspernatur tenetur recusandae fugiat quisquam accusantium quos velit soluta dolorem ipsam corrupti </br>ut temporibus! Odio sint culpa, alias consequatur dolore aspernatur commodi aut reprehenderit.</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

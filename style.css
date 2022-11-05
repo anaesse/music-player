@@ -10,7 +10,8 @@ body {
     background: royalblue;
     min-height: 100vh;
     display: flex;
-    /* justify-content: center; */
+    gap: 20px;
+    justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
 }
@@ -29,7 +30,7 @@ body {
     outline: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-button{
+.musicBtn{
     width: 40px;
     height: 40px;
     padding: 0.5%;
@@ -40,6 +41,34 @@ button{
     border:1px solid sandybrown;
     background: linear-gradient(to right bottom, sandybrown, orange);
     cursor: pointer;
+}
+#lyricsBtn{
+    /* width: 40px;
+    height: 40px; */
+    font-size: 18px;
+    padding: 8px 16px;
+    margin:6px 0;
+    /* line-height: 20px; */
+    text-align: center;
+    border-radius: 8px;
+    border:1px solid sandybrown;
+    background: linear-gradient(to right bottom, sandybrown, orange);
+    cursor: pointer;
+}
+.lyricsTitle{
+    display: flex;
+    justify-content: center;
+}
+#genre{
+    display: flex;
+    justify-content: center;
+}
+#lyrics{
+    background: wheat;
+    padding: 18px;
+    margin: 20px;
+    border: 2px solid #3774ff;
+    border-radius: 8px;
 }
 
 .slider_container{
